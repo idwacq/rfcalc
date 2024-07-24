@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof Material Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Roof Material Calculator</h1>
+            <form id="calculatorForm">
+                <div class="input-group">
+                    <label for="roofArea">Total Roof Area (sq ft):</label>
+                    <input type="number" id="roofArea" placeholder="Enter total roof area" required>
+                </div>
+                <div class="input-group">
+                    <label for="waste">Waste Percentage (%):</label>
+                    <input type="number" id="waste" placeholder="Enter waste percentage" value="0" required>
+                </div>
+                <div class="input-group">
+                    <label for="ridges">Length of Ridges (ft):</label>
+                    <input type="number" id="ridges" placeholder="Enter length of ridges" required>
+                </div>
+                <div class="input-group">
+                    <label for="hips">Length of Hips (ft):</label>
+                    <input type="number" id="hips" placeholder="Enter length of hips" required>
+                </div>
+                <div class="input-group">
+                    <label for="eaves">Length of Eaves (ft):</label>
+                    <input type="number" id="eaves" placeholder="Enter length of eaves" required>
+                </div>
+                <div class="input-group">
+                    <label for="rakes">Length of Rakes (ft):</label>
+                    <input type="number" id="rakes" placeholder="Enter length of rakes" required>
+                </div>
+                <div class="input-group">
+                    <label for="valleys">Length of Valleys (ft):</label>
+                    <input type="number" id="valleys" placeholder="Enter length of valleys" required>
+                </div>
+                <div class="input-group">
+                    <label for="intersections">Length of Roof-Wall Intersections, Including Chimneys (ft):</label>
+                    <input type="number" id="intersections" placeholder="Enter length of intersections" required>
+                </div>
+                <div class="input-group">
+                    <label for="penetrationsSmall">Number of Small Roof Penetrations (1-1/2" - 3"):</label>
+                    <input type="number" id="penetrationsSmall" placeholder="Enter number of small roof penetrations" required>
+                </div>
+                <div class="input-group">
+                    <label for="penetrationsLarge">Number of Large Roof Penetrations (PF-GSSR1 Goldenseal 0-3-3/8"):</label>
+                    <input type="number" id="penetrationsLarge" placeholder="Enter number of large roof penetrations" required>
+                </div>
+                <button type="button" onclick="calculate()">Calculate</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
